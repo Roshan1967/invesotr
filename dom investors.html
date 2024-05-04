@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+<script>
+    let head = document.createElement("div")
+    head.style.backgroundColor = "white"
+    head.style.fontSize = "30px"
+    head.style.color = "black"
+    head.textContent = "Strategic Investors"
+    head.style.textAlign = "center"
+    head.style.height='40px'
+    head.style.width='100%'
+    //this is the main div for the other child divs.
+    const mainContainer = document.createElement('div');
+    mainContainer.style.height = '500px';
+    mainContainer.style.width = 'auto'
+    mainContainer.style.backgroundColor="white"
+    document.body.append(mainContainer);
+    mainContainer.appendChild(head);
+    //this is the main container for the all child divs.
+    let sabkamain = document.createElement('div');
+    sabkamain.style.backgroundColor = "black"
+    sabkamain.style.height = '1200px'
+    sabkamain.style.width = 'auto'
+    sabkamain.style.paddingTop = '50px'
+    document.body.appendChild(sabkamain);
+    sabkamain.appendChild(mainContainer);
+    //these are the child divs.
+    let child1 = document.createElement('div');
+    child1.style.height = '400px'
+    child1.style.width='100%'
+    child1.style.paddingTop='40px'
+    child1.style.backgroundColor='grey'
+    child1.style.display='flex'
+
+    let subchild = document.createElement('div');
+    subchild.style.height='300px'
+    subchild.style.width = '250px'
+    subchild.style.backgroundColor='white'
+    subchild.style.margin='auto'
+    subchild.style.borderRadius='10px'
+    let subchild1 = document.createElement('div');
+    subchild1.style.height='300px'
+    subchild1.style.width = '250px'
+    subchild1.style.backgroundColor='white'
+    subchild1.style.margin='auto'
+    subchild1.style.borderRadius='10px'
+
+    let subchild2 = document.createElement('div');
+    subchild2.style.height='300px'
+    subchild2.style.width = '250px'
+    subchild2.style.backgroundColor='white'
+    subchild2.style.margin='auto'
+    subchild2.style.borderRadius='10px'
+
+    let subchild3 = document.createElement('div');
+    subchild3.style.height='300px'
+    subchild3.style.width = '250px'
+    subchild3.style.backgroundColor='white'
+    subchild3.style.margin='auto'
+    subchild3.style.borderRadius='10px'
+    
+    let img1 = document.createElement('Img');
+    img1.src="box1_image.jpg"
+    img1.style.height='200px'
+    img1.style.width='100%'
+    img1.style.borderTopLeftRadius='10px'
+    img1.style.borderTopRightRadius='10px'
+    subchild.append(img1)
+
+    let img2 = document.createElement('Img');
+    img2.src="box1_image.jpg"
+    img2.style.height='200px'
+    img2.style.width='100%'
+    img2.style.borderTopLeftRadius='10px'
+    img2.style.borderTopRightRadius='10px'
+    subchild1.append(img2)
+
+    let img3 = document.createElement('Img');
+    img3.src="box1_image.jpg"
+    img3.style.height='200px'
+    img3.style.width='100%'
+    img3.style.borderTopLeftRadius='10px'
+    img3.style.borderTopRightRadius='10px'
+    subchild2.append(img3)
+
+    let img4 = document.createElement('Img');
+    img4.src="box1_image.jpg"
+    img4.style.height='200px'
+    img4.style.width='100%'
+    img4.style.borderTopLeftRadius='10px'
+    img4.style.borderTopRightRadius='10px'
+    subchild3.append(img4)
+    child1.append(subchild)
+    child1.append(subchild1)
+    child1.append(subchild2)
+    child1.append(subchild3)
+    
+    let h1=document.createElement("h1");
+    h1.innerText="Vijay Shekhar Sharma"
+
+    let h2=document.createElement("h1");
+    h2.innerText="Kunal Shah"
+
+    let h3=document.createElement("h1");
+    h3.innerText="Amrish Rau"
+
+    let h4=document.createElement("h1");
+    h4.innerText="Sampad Swain"
+
+    subchild.append(h1)
+    subchild1.append(h2)
+    subchild2.append(h3)
+    subchild3.append(h4)
+    mainContainer.appendChild(child1);
+   
+    
+</script>
+</html>
+
